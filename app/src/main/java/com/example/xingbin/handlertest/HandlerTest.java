@@ -59,7 +59,7 @@ public class HandlerTest extends AppCompatActivity implements View.OnClickListen
             while (progress < 100) {
                 Message response = Message.obtain(handler);
                 response.what = PROGRESS;
-                progress += 5;
+                progress += 10;
                 if (progress == 100) {
                     response.what = OVER;
                 }
